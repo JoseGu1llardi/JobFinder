@@ -135,7 +135,7 @@ nav:after {
     margin: 0 10px;
 }
 
-#search-form input[type=submit] {
+#search-form input[type=submit], #sendjobs input[type=submit] {
     background-color: #3381F3;
     text-transform: uppercase;
     color: #FFF;
@@ -143,7 +143,7 @@ nav:after {
     transition: 0.5s;
 }
 
-#search-form input[type=submit]:hover {
+#search-form input[type=submit]:hover, #sendjobs input[type=submit]:hover {
     background-color: #2663be;
 }
 
@@ -678,8 +678,69 @@ footer .wrapper:after {
     text-transform: uppercase;
     color: #666;
     font-weight: bold;
-    margin-left: .5em
-    ;
+    margin-left: .5em;
+}
+
+/* SEND JOBS PAGE */
+
+#sendjobs #sendjobs-container {
+    margin-top: 100px;
+    background: none;
+    padding: 5em 0;
+}
+
+#sendjobs h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 2em;
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sendjobs label {
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+}
+
+#sendjobs input, #sendjobs textarea, #sendjobs select {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#sendjobs input {
+    border: 1px solid #CCC;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sendjobs textarea, #sendjobs select {
+    border: 1px solid #CCC;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sendjobs input[type=submit] {
+    width: 200px;
+    float: right;
+}
+
+.input-box:after {
+    clear: both;
+    content: "";
+    display: block;
 }
 
 /* RESPONSIVE */
@@ -939,6 +1000,34 @@ footer .wrapper:after {
     .footer-box {
         display: block;
         width: 100%;
+    }
+
+    /* SEND JOBS PAGE */
+
+    #sendjobs #sendjobs-container {
+        padding: 2em 0;
+    }
+
+    #sendjobs h1 {
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input-box {
+        width: 80%;
+    }
+
+    #sendjobs input[type=submit] {
+        width: 150px;
+        float: right;
+    }
+    
+    .input-box:after {
+        clear: both;
+        content: "";
+        display: block;
     }
 
 }
